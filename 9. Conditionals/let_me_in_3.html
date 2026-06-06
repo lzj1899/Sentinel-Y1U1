@@ -1,0 +1,50 @@
+<!--
+     TASK CRITERIA:
+     1. Add JavaScript interaction to the the page to authenticate the user based on the username and password entered by user.
+     2. Correct credential is:
+        Username: Whinnie
+        Password: luvH0n3y
+     3. Page to give a JavaScript alert welcoming user if it is correct and error message if wrong credentials.
+
+     Things to watch out for:
+     1. Both incorrect username or incorrect password should return error message.
+     2. Best practice to never inform user which is the wrong value.
+-->
+
+<label><b>Username</b></label>
+</br>
+<input id="username" type="text" placeholder="Enter Username"/>
+</br>
+<label><b>Password</b></label>
+</br>
+<input id="password" type="password" placeholder="Enter password"/>
+</br>
+<button id="login-btn">Login</button>
+
+<script>
+    // Define the registered username and password
+    var verifiedUser = "Whinnie"
+    var verifiedPwd = "luvH0n3y"
+
+    // Login button triggers the authentication process
+    document.getElementById("login-btn").onclick = () => {
+        // Read the value from the input fields after Login button is clicked
+        var username = document.getElementById("username").value
+        var password = document.getElementById("password").value
+
+        // Check if username matches
+        if (username === verifiedUser) {
+            // Check if password matches
+            if (password === verifiedPwd) {
+                // JavaScript alert welcoming authenticated user
+                alert("Welcome, " + username + "!")
+            } else {
+                // JavaScript alert returning error message
+                alert("Incorrect username or password!")
+            }
+        } else {
+            // JavaScript alert returning error message
+            alert("Incorrect username or password!")
+        }
+    }
+</script>

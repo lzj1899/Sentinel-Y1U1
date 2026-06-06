@@ -1,0 +1,67 @@
+<!--
+     TASK CRITERIA:
+     1. Add JavaScript interaction to the the page to authenticate the user based on the passcode entered by the user.
+     2. There are 4 buttons that myst be pressed in certain sequence to open the door.
+     3. There are 2 images provided one is a closed door and another an opened door.
+
+     Things to watch out for:
+     1. This is a template file, so the script are incomplete.
+     2. Some are partial code, so read through carefully and fill in the blanks.
+-->
+
+<label><b>Passcode</b></label>
+<br/>
+
+<button id="button-1">a</button>
+<button id="button-2">b</button>
+<button id="button-3">c</button>
+<button id="button-4">d</button>
+<br/>
+
+<img id="door" src="https://i.ibb.co/nM9x063/closed.jpg">
+
+<script>
+    var passcode = "aabbababcd"
+    var userInput = ""
+
+    // Button 1 JS reaction
+    document.getElementById("button-1").onclick = () => {
+        // Add passcode to userInput variable based on button click
+        userInput += "a";
+        // Check if userInput equals to passcode, if yes open door
+        if (userInput == passcode) {
+            document.getElementById("door").src = "https://i.ibb.co/yBZMfcX/open.png";
+        }
+    }
+
+    // Taking reference from the above example complete for the following functions
+    // Button 2 JS reaction
+    document.getElementById("button-2").onclick = () => {
+        // Add passcode to userInput variable based on button click
+        userInput += ;
+        // Check if userInput equals to passcode, if yes open door
+        if ( == passcode) {
+            document.getElementById("").src = "https://i.ibb.co/yBZMfcX/open.png";
+        }
+    }
+
+    // Button 3 JS reaction
+    document.getElementById("").onclick = () => {
+        // Add passcode to userInput variable based on button click
+        
+        // Check if userInput equals to passcode, if yes open door
+        if ( == ) {
+            document.getElementById().src = ;
+        }
+    }
+
+    // Button 4 JS reaction
+    document.getElementById("").onclick = () => {
+        // Add passcode to userInput variable based on button click
+        userInput += ;
+        // Check if userInput equals to passcode, if yes open door
+        if ( == passcode) {
+            
+        }
+    }
+</script>

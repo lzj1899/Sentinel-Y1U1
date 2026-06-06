@@ -1,0 +1,28 @@
+<!--
+     TASK CRITERIA:
+     1. Add JavaScript interaction to the the page to authenticate the user based on the passcode entered by the user.
+     2. Correct passcode is 1337.
+     3. Page to give a JavaScript alert "YES!" if it is correct and "NO!" if it is wrong.
+-->
+
+<label><b>Passcode</b></label>
+<br/>
+<input id="passcodeInput" type="text" placeholder="Enter Passcode"/>
+<button id="submit">Submit</button>
+
+<script>
+    // Submit button triggers the JavaScript interaction
+    document.getElementById("submit").onclick = () => {        
+        // Retrive the passcode entered by the user
+        var passcode = document.getElementById("passcodeInput").value
+
+        // Compare the user input value to the correct passcode
+        if (passcode === "1337") {
+            // Give a JavaScript alert "YES!" if correct
+            alert("YES!")
+        } else {
+            // Give a JavaScript alert "NO!" if wrong
+            alert("NO!")
+        }
+    }
+</script>

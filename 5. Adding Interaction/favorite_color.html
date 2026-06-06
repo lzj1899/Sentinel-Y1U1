@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <!--
+         TASK CRITERIA:
+         1. Create a HTML page that contains an input, a placeholder "Your favorite color", and a button.
+         2. Once button clicked, page background color changes to what user entered in input field.
+         
+         Things to watch out for:
+         1. For this assignment, you need to use the body element <body></body>
+            inside the HTML element to change the page background with CSS styling.
+    -->
+
+    <body>
+        <h1>Color Changing Machine</h1>
+
+        <!--
+             User Input Form
+             1. Input field with a placeholder text "Your favorite color"
+             2. Change button to trigger background color change
+        -->
+        <input id="get-color" placeholder="Your favorite color">
+        <button id="color-change">change</button>
+
+        <!--
+             To change the color, you will need to use JavaScript to read the user input and then to change the background color of the page.
+        -->
+        <script>
+            // The color change is trigger by the change button being clicked
+            document.getElementById("color-change").onclick = () => {
+                /*
+                    After button clicked, there is two actions:
+                    1. Getting the color the user input into the field
+                    2. Change the page background color
+                */
+                
+                // Get the user defined color, use the .value method to get the user input value from the specified element
+                var color = document.getElementById("get-color").value
+
+                // Now change the color with the value
+                document.body.style.backgroundColor = color
+            }
+        </script>
+    </body>
+</html>

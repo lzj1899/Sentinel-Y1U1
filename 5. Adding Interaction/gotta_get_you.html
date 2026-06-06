@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <!--
+         TASK CRITERIA:
+         1. You are given two HTML elements, a paragraph and a button.
+         2. On button click, the page should open a pop-up message box with the text inside the paragraph.
+         3. Only add JavaScript inside the script element,
+            and inside the document.getElementById("run").onclick = () => {// Add your code in here}
+    -->
+
+    <p id="message">Gotta get you into my heart!</p>
+    <button id="run">Run Code!</button>
+
+    <script>
+        document.getElementById("run").onclick = () => {
+            /*
+                1. To create the pop-up message box, use the alert function in JavaScript.
+                2. To pass the text inside the HTML paragraph element into the pop-up
+                   a. Identify the paragraph element ID, which is message.
+                   b. Then use document.getElementById('message') to get the paragraph element.
+                   c. However, the above step only get the element but not the text inside the element, so add .innerHTML to the function
+            */
+            alert(document.getElementById("message").innerHTML)
+        }
+    </script>
+</html>
