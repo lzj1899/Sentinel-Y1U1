@@ -49,3 +49,11 @@ In this topic, students will learn how to use `if`, `else if`, and `else` statem
 - Let Me In 1 Assignment guided solution (Went Through in Class)
 - Let Me In 2 Template file
 - Let Me In 3 Assignment guided solution (Went Through in Class)
+
+## Image Safe
+### Brief Summary
+Image Safe is the capstone project to summarize this module.
+In this project students will apply everything they learnt in the previous chapters to build an image safe to lock their image away securely.
+### Materials Provided
+- Class Hero Logo Photos
+- Image Safe - Modifying State Template file

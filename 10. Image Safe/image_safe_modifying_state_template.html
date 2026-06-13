@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+     <body>
+          <!-- big title with the text "Programmable Super-Secret Passcode Protected Image Safe" -->
+     
+          <!-- text hyperlink to the Wikipedia page about safes -->
+
+          <!-- short paragraph with an explanation fo the purpose of the app -->
+    
+          <!-- input that will be used to pass in the URL (done)-->
+          <input type="text" placeholder="Image URL: https://...">
+          <br/>
+
+          <!-- input that will be used to show the passcode (done)-->
+          <input type="text" placeholder="passcode" readonly>
+          <br/>
+
+          <!-- buttons for the numbers 0-9 as well as the "clear" -->
+          <button type="button"></button>
+          <button type="button"></button>
+          <button type="button"></button>
+          <br/>
+          <button type="button"></button>
+          <button type="button"></button>
+          <button type="button"></button>
+          <br/>
+          <button type="button"></button>
+          <button type="button"></button>
+          <button type="button"></button>
+          <br/>
+          <button type="button"></button>
+          <button type="button"></button>
+
+          <!-- lock/unlock buttons -->
+          <button type="button"></button>
+          <button type="button"></button>
+          <br/>
+
+          <!-- an image to hide -->
+          <img>
+
+          <!-- adding states -->
+          <script>
+               var imageUrlInput = document.getElementById("")   // Point to the HTML element collecting the image URL
+               var passcodeInput = document.getElementById("")   // Point to the HTML element collecting the passcode
+
+               var messageElement = document.getElementById("")  // Point to the HTML paragraph element on the explanation of the application purpose
+               var imageElement = document.getElementById("")    // Point to the HTML image element
+
+               var passcode = ""                                 // Saving passcode in a JavaScript variable
+
+               document.getElementById("lock-btn").onclick = () => {
+                    // Store passcode to a variable
+                    passcode = passcodeInput.value
+                    // Clear the passcode so it is hidden
+                    passcodeInput.value = ""
+                    // Hide the image url input bod
+                    imageUrlInput.style.display = "none"
+                    // Hide the image
+                    imageElement.style.display = "none"
+                    // Hide the lock button and show the unlock button
+                    document.getElementById("lock-btn").style.display = "none"
+                    document.getElementById("unlock-btn").style.display = "inline"
+
+                    messageElement.innerHTML = "Enter the passcode to view the image"
+               }
+
+               /*
+                    Add the JavaScript for the previous parts below
+               */
+          </script>
+     </body>
+</html>
